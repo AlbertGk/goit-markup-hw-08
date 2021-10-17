@@ -1,0 +1,99 @@
+.page-button:hover,
+.page-button:focus{
+    color: #FFFFFF;
+    background-color: #2196F3;
+    font-size:16px;
+}
+
+.page-button:hover{
+    cursor: pointer;
+}
+
+.page-link:hover,
+.page-link:focus{
+    color: #2196F3;
+    font-size: 14px;
+}
+
+.overall{
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+}
+
+.logo{
+    font-size: 26px;
+    line-height: 1.2;
+    color: #212121;
+    text-decoration: none;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+}
+
+.banner{
+    color: #FFFFFF;
+    font-size: 44px;
+    line-height: 1.36;
+}
+
+.info-tittle,
+.info-text{
+    font-size: 14px;
+}
+
+.company-description,
+.team-tittle{
+    font-size: 36px;
+}
+
+.team-description,
+.portfolio-type{
+    font-size: 16px;
+}
+
+.portfolio-tittle{
+    font-size: 18px;
+    line-height: 2;
+}
+
+.page-link{
+    line-height: 1.14;
+    color: #212121;
+    text-decoration: none;
+}
+
+.info-tittle,
+.page-button,
+.portfolio-type{
+    line-height: 1.88;
+}
+
+.info-text{
+    line-height: 1.71;
+}
+
+.company-description,
+.team-tittle{
+    line-height: 1.16;
+}
+
+.team-description{
+    line-height: 1.19;
+}
+
+.paint-link,
+.info-text,
+.paint-job,
+.portfolio-type{
+    color: #757575;
+}
+
+.logo-first{
+    color: #2196F3;
+}
+
+.logo-second,
+.address{
+    color: #FFFFFF;
+}
