@@ -5,8 +5,30 @@
     font-size:16px;
 }
 
+.order-button:hover,
+.order-button:focus{
+    color: #212121;
+    background-color: #FFFFFF;
+    font-size:16px;
+}
+
 .page-button:hover{
     cursor: pointer;
+}
+
+.order-button:hover{
+    cursor: pointer;
+}
+
+.order-button,
+.page-button{
+    font-size:16px;
+    text-align: center;
+}
+
+.order-button{
+    color: #FFFFFF;
+    background-color: #2196F3;
 }
 
 .page-link:hover,
@@ -35,8 +57,17 @@
     color: #FFFFFF;
     font-size: 44px;
     line-height: 1.36;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+}
+.banner,
+.info-tittle{
+    text-transform: uppercase;
 }
 
+.page-link,
 .info-tittle,
 .info-text{
     font-size: 14px;
@@ -45,6 +76,7 @@
 .company-description,
 .team-tittle{
     font-size: 36px;
+    text-align: center;
 }
 
 .team-description,
@@ -64,12 +96,14 @@
 }
 
 .info-tittle,
+.order-button,
 .page-button,
 .portfolio-type{
     line-height: 1.88;
 }
 
-.info-text{
+.info-text,
+.address{
     line-height: 1.71;
 }
 
@@ -80,6 +114,7 @@
 
 .team-description{
     line-height: 1.19;
+    text-align: center;
 }
 
 .paint-link,
@@ -96,4 +131,43 @@
 .logo-second,
 .address{
     color: #FFFFFF;
+}
+
+.page-link,
+.page-button{
+    font-weight:500;
+}
+
+.order-button,
+.info-tittle,
+.company-description,
+.team-tittle,
+.team-name,
+.portfolio-tittle{
+    font-weight: bold;
+}
+
+.remove-dots{
+    list-style-type: none;
+}
+
+.page-link{
+    letter-spacing: 0.02em;
+}
+
+.page-button,
+.info-text,
+.info-tittle,
+.company-description,
+.team-tittle,
+.team-description,
+.paint-link,
+.address{
+    letter-spacing: 0.03em;
+}
+
+.order-button,
+.portfolio-tittle,
+.portfolio-type{
+    letter-spacing: 0.06em;
 }
