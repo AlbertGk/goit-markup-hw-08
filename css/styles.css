@@ -1,141 +1,140 @@
 .page-button:hover,
-.page-button:focus{
-    color: #FFFFFF;
-    background-color: #2196F3;
-    font-size:16px;
+.page-button:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  font-size: 16px;
 }
 
 .order-button:hover,
-.order-button:focus{
-    color: #212121;
-    background-color: #FFFFFF;
-    font-size:16px;
+.order-button:focus {
+  color: #212121;
+  background-color: #ffffff;
+  font-size: 16px;
 }
 
-.page-button:hover{
-    cursor: pointer;
+.page-button:hover {
+  cursor: pointer;
 }
 
-.order-button:hover{
-    cursor: pointer;
+.order-button:hover {
+  cursor: pointer;
 }
 
 .order-button,
-.page-button{
-    font-size:16px;
-    text-align: center;
+.page-button {
+  font-size: 16px;
+  text-align: center;
 }
 
-.order-button{
-    color: #FFFFFF;
-    background-color: #2196F3;
+.order-button {
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 .page-link:hover,
-.page-link:focus{
-    color: #2196F3;
-    font-size: 14px;
+.page-link:focus {
+  color: #2196f3;
+  font-size: 14px;
 }
 
-.overall{
-    font-family: 'Roboto', sans-serif;
-    color: #212121;
+.overall {
+  font-family: 'Roboto', sans-serif;
+  color: #212121;
 }
 
-.logo{
-    font-size: 26px;
-    line-height: 1.2;
-    color: #212121;
-    text-decoration: none;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    letter-spacing: 0.03em;
+.logo {
+  font-size: 26px;
+  line-height: 1.2;
+  color: #212121;
+  text-decoration: none;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.03em;
 }
 
-.banner{
-    color: #FFFFFF;
-    font-size: 44px;
-    line-height: 1.36;
-    font-weight: 900;
-    text-align: center;
-    letter-spacing: 0.06em;
-    
+.banner {
+  color: #ffffff;
+  font-size: 44px;
+  line-height: 1.36;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 .banner,
-.info-tittle{
-    text-transform: uppercase;
+.info-tittle {
+  text-transform: uppercase;
 }
 
 .page-link,
 .info-tittle,
-.info-text{
-    font-size: 14px;
+.info-text {
+  font-size: 14px;
 }
 
 .company-description,
-.team-tittle{
-    font-size: 36px;
-    text-align: center;
+.team-tittle {
+  font-size: 36px;
+  text-align: center;
 }
 
 .team-description,
-.portfolio-type{
-    font-size: 16px;
+.portfolio-type {
+  font-size: 16px;
 }
 
-.portfolio-tittle{
-    font-size: 18px;
-    line-height: 2;
+.portfolio-tittle {
+  font-size: 18px;
+  line-height: 2;
 }
 
-.page-link{
-    line-height: 1.14;
-    color: #212121;
-    text-decoration: none;
+.page-link {
+  line-height: 1.14;
+  color: #212121;
+  text-decoration: none;
 }
 
 .info-tittle,
 .order-button,
 .page-button,
-.portfolio-type{
-    line-height: 1.88;
+.portfolio-type {
+  line-height: 1.88;
 }
 
 .info-text,
-.address{
-    line-height: 1.71;
+.address {
+  line-height: 1.71;
 }
 
 .company-description,
-.team-tittle{
-    line-height: 1.16;
+.team-tittle {
+  line-height: 1.16;
 }
 
-.team-description{
-    line-height: 1.19;
-    text-align: center;
+.team-description {
+  line-height: 1.19;
+  text-align: center;
 }
 
 .paint-link,
 .info-text,
 .paint-job,
-.portfolio-type{
-    color: #757575;
+.portfolio-type {
+  color: #757575;
 }
 
-.logo-first{
-    color: #2196F3;
+.logo-first {
+  color: #2196f3;
 }
 
 .logo-second,
-.address{
-    color: #FFFFFF;
+.address {
+  color: #ffffff;
 }
 
 .page-link,
-.page-button{
-    font-weight:500;
+.page-button {
+  font-weight: 500;
 }
 
 .order-button,
@@ -143,16 +142,16 @@
 .company-description,
 .team-tittle,
 .team-name,
-.portfolio-tittle{
-    font-weight: bold;
+.portfolio-tittle {
+  font-weight: bold;
 }
 
-.remove-dots{
-    list-style-type: none;
+.remove-dots {
+  list-style-type: none;
 }
 
-.page-link{
-    letter-spacing: 0.02em;
+.page-link {
+  letter-spacing: 0.02em;
 }
 
 .page-button,
@@ -162,12 +161,12 @@
 .team-tittle,
 .team-description,
 .paint-link,
-.address{
-    letter-spacing: 0.03em;
+.address {
+  letter-spacing: 0.03em;
 }
 
 .order-button,
 .portfolio-tittle,
-.portfolio-type{
-    letter-spacing: 0.06em;
+.portfolio-type {
+  letter-spacing: 0.06em;
 }
