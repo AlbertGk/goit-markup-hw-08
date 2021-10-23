@@ -1,59 +1,95 @@
-.page-button:hover,
-.page-button:focus {
-  color: #ffffff;
-  background-color: #2196f3;
-  font-size: 16px;
+:root{
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --main-color: #2196f3;
 }
 
-.order-button:hover,
-.order-button:focus {
-  color: #212121;
-  background-color: #ffffff;
-  font-size: 16px;
+body{
+  font-family: var(--main-font);
 }
 
-.page-button:hover {
-  cursor: pointer;
-}
-
-.order-button:hover {
-  cursor: pointer;
-}
-
-.order-button,
-.page-button {
-  font-size: 16px;
-  text-align: center;
-}
-
-.order-button {
-  color: #ffffff;
-  background-color: #2196f3;
-}
-
-.page-link:hover,
-.page-link:focus {
-  color: #2196f3;
-  font-size: 14px;
-}
-
-.overall {
-  font-family: 'Roboto', sans-serif;
-  color: #212121;
-}
-
+/* =============COMPONENTS===============*/
 .logo {
   font-size: 26px;
   line-height: 1.2;
   color: #212121;
   text-decoration: none;
-  font-family: Raleway;
+  font-family: var(--secondary-font);
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 0.03em;
 }
 
-.banner {
+.logo-first {
+  color: var(--main-color);
+}
+
+.contact-link:hover,
+.contact-link:focus{
+  color: var(--main-color);
+}
+
+.contact-link{
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+  text-decoration: none;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  color: #757575;
+}
+
+.contact-place{
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.logo-second,
+.contact-place {
+  color: #ffffff;
+}
+
+.hero-banner,
+.about-us-tittle {
+  text-transform: uppercase;
+}
+/* ===========END COMPONENTS============*/
+
+
+/* ===========INDEX HEADER=============*/
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--main-color);
+}
+
+.header {
+  color: #212121;
+}
+
+.navigation-link {
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+  text-decoration: none;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.navigation-link {
+  color: #212121;
+}
+/* =========END INDEX HEADER==========*/
+
+
+/* ===========INDEX MAIN=============*/
+/*---------INDEX ARTICLE-------------*/
+
+.hero{
+  background-color: #2F303A;
+}
+
+.hero-banner {
   color: #ffffff;
   font-size: 44px;
   line-height: 1.36;
@@ -61,112 +97,132 @@
   text-align: center;
   letter-spacing: 0.06em;
 }
-.banner,
-.info-tittle {
-  text-transform: uppercase;
-}
 
-.page-link,
-.info-tittle,
-.info-text {
-  font-size: 14px;
-}
-
-.company-description,
-.team-tittle {
-  font-size: 36px;
-  text-align: center;
-}
-
-.team-description,
-.portfolio-type {
+.hero-button:hover,
+.hero-button:focus {
+  color: #212121;
+  background-color: #ffffff;
   font-size: 16px;
 }
 
-.portfolio-tittle {
-  font-size: 18px;
-  line-height: 2;
+.hero-button:hover {
+  cursor: pointer;
 }
 
-.page-link {
-  line-height: 1.14;
-  color: #212121;
-  text-decoration: none;
-}
-
-.info-tittle,
-.order-button,
-.page-button,
-.portfolio-type {
-  line-height: 1.88;
-}
-
-.info-text,
-.address {
-  line-height: 1.71;
-}
-
-.company-description,
-.team-tittle {
-  line-height: 1.16;
-}
-
-.team-description {
-  line-height: 1.19;
+.hero-button {
+  font-size: 16px;
   text-align: center;
-}
-
-.paint-link,
-.info-text,
-.paint-job,
-.portfolio-type {
-  color: #757575;
-}
-
-.logo-first {
-  color: #2196f3;
-}
-
-.logo-second,
-.address {
   color: #ffffff;
+  background-color: var(--main-color);
+  line-height: 1.88;
+  font-weight: 700;
+  letter-spacing: 0.06em;
 }
+/*-------END INDEX ARTICLE-----------*/
 
-.page-link,
-.page-button {
-  font-weight: 500;
-}
-
-.order-button,
-.info-tittle,
-.company-description,
-.team-tittle,
-.team-name,
-.portfolio-tittle {
-  font-weight: bold;
-}
-
-.remove-dots {
-  list-style-type: none;
-}
-
-.page-link {
-  letter-spacing: 0.02em;
-}
-
-.page-button,
-.info-text,
-.info-tittle,
-.company-description,
-.team-tittle,
-.team-description,
-.paint-link,
-.address {
+/*---------INDEX SECTION 1-----------*/
+.about-us-tittle,
+.about-us-text {
+  font-size: 14px;
   letter-spacing: 0.03em;
 }
 
-.order-button,
-.portfolio-tittle,
-.portfolio-type {
+.about-us-tittle{
+  line-height: 1.88;
+  font-weight: 700;
+}
+
+.about-us-text{
+  line-height: 1.71;
+  color: #757575;
+}
+
+.about-us-banner{
+  font-size: 36px;
+  text-align: center;
+  line-height: 1.16;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+/*------END INDEX SECTION 1----------*/
+
+/*----------INDEX SECTION 2----------*/
+.team-banner{
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+.team-description{
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-banner,
+.team-description{
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-banner,
+.team-description-name{
+  font-weight: 700;
+}
+
+.team-description-job{
+  color: #757575;
+}
+
+/*-------END INDEX SECTION 2---------*/
+/* ========END INDEX MAIN============*/
+
+
+/* =========INDEX FOOTER============*/
+.contact{
+  background-color: #2F303A;
+}
+/* =======END INDEX FOOTER==========*/
+
+
+
+
+
+/* =========PORTFOLIO MAIN==========*/
+.services-list-button:hover,
+.services-list-button:focus {
+  color: #ffffff;
+  background-color: var(--main-color);
+  font-size: 16px;
+}
+
+.services-list-button:hover {
+  cursor: pointer;
+}
+
+.services-list-button {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.services-gallery-description-type {
+  font-size: 16px;
+  color: #757575;
+}
+
+.services-gallery-description-tittle {
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 700;
+}
+
+.services-list-button,
+.services-gallery-description-type {
+  line-height: 1.88;
+}
+
+.services-gallery-description-tittle,
+.services-gallery-description-type {
   letter-spacing: 0.06em;
 }
+/* ======END PORTFOLIO MAIN=========*/
