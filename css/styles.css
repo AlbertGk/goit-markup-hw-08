@@ -420,8 +420,9 @@ margin-left: 30px;
 }
 
 .services-gallery-description{
-  padding-left: 24px;
-  padding-right: 24px;
+  /*padding-left: 24px;
+  padding-right: 24px;*/
+  border: 1px solid #EEEEEE;
 }
 
 .service-gallery-item:nth-child(-n + 6){
@@ -441,7 +442,6 @@ margin-left: 30px;
 
 .services-gallery-picture {
   background: #FFFFFF;
-  border: 1px solid #EEEEEE;
   margin:0 30px 0 0;
 }
 /* ======END PORTFOLIO MAIN=========*/
