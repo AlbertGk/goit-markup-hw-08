@@ -91,7 +91,7 @@ img{
 /* ===========END COMPONENTS============*/
 
 
-/* ===========INDEX HEADER=============*/
+/* ======INDEX & PORTFOLIO HEADER=======*/
 .header .container,
 .navigation,
 .navigation-list{
@@ -99,7 +99,7 @@ img{
   align-items: center;
 }
 
-.header .container{
+.header .navigation{
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -148,13 +148,16 @@ margin-left: 215px;
 .navigation-link-active {
   color: var(--main-color);
 }
-/* =========END INDEX HEADER==========*/
+/* ===END INDEX & PORTFOLIO HEADER===*/
 
 
 /* ===========INDEX MAIN=============*/
 /*---------INDEX ARTICLE-------------*/
 .hero{
   background-color: #2F303A;
+}
+
+.hero .container{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -302,8 +305,7 @@ margin-left: 30px;
 .team-gallery{
   display: flex;
   flex-wrap: wrap;
-  margin-left: 215px;
-  margin-right: 215px;
+  justify-content: center;
 }
 
 .team-gallery-item-item{
@@ -314,7 +316,7 @@ margin-left: 30px;
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-gallery-item{
+.team-gallery-item-item{
   flex-basis: calc((100% - 90px) / 4);
 }
 
@@ -325,11 +327,13 @@ margin-left: 30px;
 /* ========END INDEX MAIN============*/
 
 
-/* =========INDEX FOOTER============*/
+/* ====INDEX & PORTFOLIO FOOTER======*/
+.footer{
+  background-color: #2F303A;
+}
 
 .contact{
   display: flex;
-  background-color: #2F303A;
   flex-direction: column;
 }
 
@@ -353,7 +357,7 @@ margin-left: 30px;
   margin-left: 215px;
 }
 
-/* =======END INDEX FOOTER==========*/
+/* ===END & PORTFOLIO INDEX FOOTER==*/
 
 
 
