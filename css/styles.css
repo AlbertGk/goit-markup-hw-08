@@ -37,6 +37,7 @@ img{
   width: 1200px;
   align-items: center;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .section{
@@ -151,6 +152,9 @@ margin-left: 0;
 /*---------INDEX ARTICLE-------------*/
 .hero{
   background-color: #2F303A;
+  background-image: url("/images/background-hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero .container{
@@ -316,6 +320,17 @@ margin-left: 30px;
   margin-left: 30px; 
 }
 /*-------END INDEX SECTION 2---------*/
+
+/*---------INDEX SECTION 3-----------*/
+.clients-banner{
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+/*-------END INDEX SECTION 3---------*/
 /* ========END INDEX MAIN============*/
 
 
