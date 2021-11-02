@@ -59,9 +59,14 @@ img{
   color: var(--main-color);
 }
 
+.contact-link-item{
+margin-right: 10px;
+}
+
 .contact-link:hover,
 .contact-link:focus{
   color: var(--main-color);
+  fill: var(--main-color);
 }
 
 .contact-link{
@@ -74,6 +79,7 @@ img{
   color: #757575;
   display: flex;
   align-items: center;
+  fill: #757575
 }
 
 .contact-place{
@@ -122,6 +128,7 @@ margin-left: 0;
   margin-right: 50px;
 }
 
+
 .navigation-link:hover,
 .navigation-link:focus {
   color: var(--main-color);
@@ -146,15 +153,6 @@ margin-left: 0;
 
 .navigation-link-active {
   color: var(--main-color);
-}
-
-.contact-link-item{
-fill: #757575;
-margin-right: 10px;
-}
-
-.contact-link-item:hover{
-fill: var(--main-color)
 }
 /* ===END INDEX & PORTFOLIO HEADER===*/
 
@@ -365,18 +363,13 @@ fill: var(--main-color)
   display:flex;
   justify-content:center;
   align-items: center;
-}
-
-.team-description-icons-icon{
   fill: #AFB1B8
 }
 
-.team-description-icons-icon:hover{
-  fill: #FFFFFF;
-}
-
-.team-description-icons-link:hover{
+.team-description-icons-link:hover,
+.team-description-icons-link:focus{
   background-color: var(--main-color);
+  fill: #FFFFFF;
 }
 
 /*-------END INDEX SECTION 2---------*/
@@ -413,17 +406,12 @@ fill: var(--main-color)
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: #AFB1B8;
 }
 
+.clients-rectangle:hover,
 .clients-rectangle:hover{
   border: 1px solid var(--main-color);
-}
-
-.clients-rectangle-icon{
-  fill: #AFB1B8;;
-}
-
-.clients-rectangle-icon:hover{
   fill: var(--main-color);
 }
 
@@ -498,15 +486,12 @@ display: flex;
   display:flex;
   justify-content:center;
   align-items: center;
-}
-
-.media-icons-icon,
-.media-icons-icon:hover{
   fill: #FFFFFF;
 }
 
 .media-icons-link:hover{
   background-color: var(--main-color);
+  fill: #FFFFFF;
 }
 /* ===END & PORTFOLIO INDEX FOOTER==*/
 
@@ -572,6 +557,7 @@ display: flex;
 .services-gallery-description-tittle,
 .services-gallery-description-type {
   letter-spacing: 0.06em;
+  padding-left: 24px;
 }
 
 .services-gallery-description{
