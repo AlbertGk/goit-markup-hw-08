@@ -79,7 +79,9 @@ margin-right: 10px;
   color: #757575;
   display: flex;
   align-items: center;
-  fill: #757575
+  fill: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+              fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-place{
@@ -134,25 +136,47 @@ margin-left: 0;
   color: var(--main-color);
 }
 
+/*.navigation-link:hover::after,
+.navigation-link:focus::after {
+  content: "";
+  position:absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #2196F3;
+  border-radius: 2px;
+  top: 45px;
+}*/
+
 .header {
   color: #212121;
 }
 
 .navigation-link {
+  position: relative;
   letter-spacing: 0.02em;
   line-height: 1.14;
   text-decoration: none;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
-}
-
-.navigation-link {
   color: #212121;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-link-active {
   color: var(--main-color);
+}
+
+.navigation-link-active::after {
+  content: "";
+  position:absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #2196F3;
+  border-radius: 2px;
+  top: 45px;
 }
 /* ===END INDEX & PORTFOLIO HEADER===*/
 
@@ -191,7 +215,6 @@ margin-left: 0;
 .hero-button:focus {
   color: #212121;
   background-color: #ffffff;
-  font-size: 16px;
 }
 
 .hero-button:hover {
@@ -207,9 +230,14 @@ margin-left: 0;
   font-weight: 700;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
   border-radius: 4px;
   margin-top: 40px;
   margin-bottom: 200px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+              background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+              cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
+              
 }
 
 .hero-button-text{
@@ -266,10 +294,32 @@ margin-left: 0;
 
 .about-us-gallery-item{
   flex-basis: calc((100% - 60px) / 3);
+  position:relative;
 }
 
 .about-us-gallery-item:not(:first-child){
   margin-left: 30px;  
+}
+
+.about-us-gallery-item-box{
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  /*left: 215px;
+  top: 1435px;*/
+  background: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+}
+
+.about-us-gallery-item-text{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-top: 27px;
 }
 
 .about-us-rectangle{
@@ -363,7 +413,9 @@ margin-left: 0;
   display:flex;
   justify-content:center;
   align-items: center;
-  fill: #AFB1B8
+  fill: #AFB1B8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+              background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-description-icons-link:hover,
@@ -407,10 +459,12 @@ margin-left: 0;
   align-items: center;
   justify-content: center;
   fill: #AFB1B8;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+              fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-rectangle:hover,
-.clients-rectangle:hover{
+.clients-rectangle:focus{
   border: 1px solid var(--main-color);
   fill: var(--main-color);
 }
@@ -487,6 +541,8 @@ display: flex;
   justify-content:center;
   align-items: center;
   fill: #FFFFFF;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+              background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .media-icons-link:hover{
@@ -494,8 +550,6 @@ display: flex;
   fill: #FFFFFF;
 }
 /* ===END & PORTFOLIO INDEX FOOTER==*/
-
-
 
 
 
@@ -510,7 +564,6 @@ display: flex;
 .services-list-button:focus {
   color: #ffffff;
   background-color: var(--main-color);
-  font-size: 16px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -526,6 +579,10 @@ display: flex;
   background: #F5F4FA;
   border-radius: 4px;
   border: 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+              background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+              cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .services-list li:not(:first-child){
@@ -587,5 +644,34 @@ display: flex;
 .services-gallery-picture {
   background: #FFFFFF;
   margin:0 30px 0 0;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.services-gallery-picture-box{
+  position: relative;
+  overflow: hidden;
+}
+
+.services-gallery-picture-box-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 370px;
+  height: 294px;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translate(0, 100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.services-gallery-picture-box-overlay-text{
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  padding: 49px 45px 49px 24px;
+}
+
+.services-gallery-picture:hover .services-gallery-picture-box-overlay{
+  transform: translate(0, 0)
 }
 /* ======END PORTFOLIO MAIN=========*/
