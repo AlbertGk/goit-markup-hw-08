@@ -481,7 +481,12 @@ margin-left: 0;
 .footer .container,
 .footer-form,
 .footer-form-button{
-display: flex;
+  display: flex;
+}
+
+.footer .container{
+  align-items: baseline;
+  padding-top: 60px;
 }
 
 .contact{
@@ -490,10 +495,10 @@ display: flex;
 }
 
 .footer .logo{
-  margin-top: 60px;
+  /*margin-top: 60px;
   margin-right: auto;
   margin-bottom: 20px;
-  margin-left: 0;
+  margin-left: 0;*/
 }
 
 .footer .contact-place,
@@ -525,7 +530,7 @@ display: flex;
   display:flex;
   justify-content: center;
   align-items: center;
-  padding-top: 16px;
+  padding-top: 20px;
   padding-bottom: 30px;
 }
 
@@ -559,7 +564,6 @@ display: flex;
 
 .footer-form-label{
   align-items: flex-start;
-  align-self: flex-start;
 }
 
 .footer-form-field{
@@ -582,7 +586,7 @@ display: flex;
   border: none;
   align-items: center;
   margin-left: 12px;
-  align-self: center;
+  align-self: flex-end;
 }
 
 .footer-form-button-text{
@@ -625,6 +629,7 @@ display: flex;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding: 40px;
 }
 
 .modal-close{
@@ -653,6 +658,52 @@ display: flex;
               visibility 750ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-banner{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  padding-bottom: 12px;
+}
+
+.modal-name{
+   position: relative;
+}
+
+.modal-focus:focus,
+.modal-name-field:focus,
+.modal-name-icon:focus{
+  border: 10px solid #2196F3;
+  border-radius: 4px;
+  fill: #2196F3;
+}
+
+.modal-name-text{
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.modal-name-field{
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 42px;
+}
+
+.modal-name-icon{
+  position: absolute;
+  left: 15px;
+  top: 32px;
+  transform: translate(-50%, -50%);
+}
 /* ========END OKNO MODALNE=========*/
 
 
