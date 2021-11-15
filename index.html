@@ -440,16 +440,58 @@
           </svg> 
         </button>
         <h2 class="modal-banner">Zostaw swoje dane w formularzu poniżej</h2>
-        <form name="modal-name" class="modal-name">
-          <label class="">
-            <p class="modal-name-text">Imię</p>
-            <div class="modal-focus">
-              <input type="text" class="modal-name-field">
-              <svg class="modal-name-icon" width="12" height="12">
-                <use href="images/sprite.svg#icon-person"></use>
-              </svg>
-            </div>
-          </label>
+        <form name="modal-form">
+          <div class="modal-name">
+            <label class="">
+              <p class="modal-form-text">Imię</p>
+              <div class="modal-focus">
+                <input type="text" class="modal-form-field">
+                <svg class="modal-form-icon" width="18" height="18">
+                  <use href="images/sprite.svg#icon-person"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="modal-phone">
+            <label class="">
+              <p class="modal-form-text">Telefon</p>
+              <div class="modal-focus">
+                <input type="tel" class="modal-form-field">
+                <svg class="modal-form-icon" width="18" height="18">
+                  <use href="images/sprite.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="modal-email">
+            <label class="">
+              <p class="modal-form-text">Email</p>
+              <div class="modal-focus">
+                <input type="email" class="modal-form-field">
+                <svg class="modal-form-icon" width="18" height="18">
+                  <use href="images/sprite.svg#icon-email-envelope"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div name="modal-name" class="modal-name">
+            <label class="">
+              <p class="modal-form-text">Komentarz</p>
+              <div class="modal-focus">
+                <input type="text" class="modal-form-textarea" placeholder="Wprowadź tekst">
+              </div>
+            </label>
+          </div>
+          <div name="modal-policy" class="modal-policy">
+            <input type="checkbox" class="modal-policy-box visually-hidden" name="policy" id="policy">
+            <label for="policy" class="modal-policy-text">Oświadczam, iż akcepuję 
+              <a href="#" class ="modal-policy-link">Regulamin</a> i 
+              <a href="#" class ="modal-policy-link">Politykę Prywatności.</a>
+            </label>    
+          </div>
+          <button type="submit" class="modal-policy-button">
+            <p class="modal-policy-button-text">Wyślij</p>
+          </button>
         </form>
       </div>
     </div>
