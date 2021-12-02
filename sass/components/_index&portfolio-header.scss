@@ -1,107 +1,326 @@
-.logo {
-  font-size: 26px;
-  line-height: 1.2;
-  color: $fontMainColor;
-  font-family: $secondaryFont;
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: 0.03em;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.17;
+    color: $fontMainColor;
+    font-family: $secondaryFont;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.03em;
 
-  &__first {
-    color: $mainColor;
-  }
-}
-
-.contact-link {
-  letter-spacing: 0.02em;
-  line-height: 1.14;
-  text-decoration: none;
-  font-family: $mainFont;
-  font-weight: 500;
-  font-size: 14px;
-  color: $fontSecondaryColor;
-  display: flex;
-  align-items: center;
-  fill: $fontSecondaryColor;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    color: $mainColor;
-    fill: $mainColor;
-  }
-
-  &--marginrl {
-    margin-left: auto;
-    margin-right: 50px;
-  }
-}
-
-.contact-link__item {
-  margin-right: 10px;
-}
-
-.hero__banner,
-.about-us__tittle {
-  text-transform: uppercase;
-}
-
-.header {
-  color: $fontMainColor;
-
-  &__container {
-    display: flex;
-    align-items: center;
-  }
-
-  &__logo {
-    margin-top: 24px;
-    margin-right: 93px;
-    margin-bottom: 25px;
-    margin-left: 0;
-  }
-}
-
-.navigation {
-  border-bottom: 1px solid #ececec;
-}
-
-.navigation-list {
-  display: flex;
-  align-items: center;
-  &__item {
-    margin-right: 46px;
-    &--no-marginr {
-      margin-right: 0;
+    &__first {
+      color: $mainColor;
     }
   }
-  &__link {
-    position: relative;
+
+  .hamburger {
+    display: inline-block;
+    cursor: pointer;
+    &__bar1,
+    &__bar2,
+    &__bar3 {
+      width: 24px;
+      height: 2.67px;
+      background-color: #212121;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+  }
+
+  .change .hamburger__bar1 {
+    -webkit-transform: rotate(-45deg) translate(-4px, 3px);
+    transform: rotate(-45deg) translate(-4px, 3px);
+    background-color: $mainColor;
+  }
+
+  .change .hamburger__bar2 {
+    opacity: 0;
+  }
+
+  .change .hamburger__bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -6px);
+    transform: rotate(45deg) translate(-6px, -6px);
+    background-color: $mainColor;
+  }
+
+  .contact-link {
     letter-spacing: 0.02em;
     line-height: 1.14;
     text-decoration: none;
     font-family: $mainFont;
     font-weight: 500;
     font-size: 14px;
-    color: $fontMainColor;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: $fontSecondaryColor;
+    display: flex;
+    align-items: center;
+    fill: $fontSecondaryColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
       color: $mainColor;
+      fill: $mainColor;
     }
-    &--active {
+
+    &--marginrl {
+      margin-left: auto;
+      margin-right: 50px;
+    }
+
+    &--hidden{
+    visibility: hidden;
+    display: none;
+    }
+  }
+
+  .hero__banner,
+  .about-us__tittle {
+    text-transform: uppercase;
+  }
+
+  .header {
+    color: $fontMainColor;
+
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__logo {
+      margin-top: 24px;
+      margin-right: 93px;
+      margin-bottom: 25px;
+      margin-left: 0;
+    }
+  }
+
+  .navigation {
+    border-bottom: 1px solid #ececec;
+  }
+
+  .navigation-list {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.2;
+    color: $fontMainColor;
+    font-family: $secondaryFont;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+
+    &__first {
       color: $mainColor;
     }
-    &--active::after {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: 4px;
-      background: $mainColor;
-      border-radius: 2px;
-      top: 45px;
+  }
+
+  .contact-link {
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+    text-decoration: none;
+    font-family: $mainFont;
+    font-weight: 500;
+    font-size: 14px;
+    color: $fontSecondaryColor;
+    display: flex;
+    align-items: center;
+    fill: $fontSecondaryColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $mainColor;
+      fill: $mainColor;
+    }
+
+    &--marginrl {
+      margin-left: auto;
+      margin-right: 50px;
+    }
+  }
+
+  .contact-link__item {
+    margin-right: 10px;
+  }
+
+  .hero__banner,
+  .about-us__tittle {
+    text-transform: uppercase;
+  }
+
+  .header {
+    color: $fontMainColor;
+
+    &__container {
+      display: flex;
+      align-items: center;
+    }
+
+    &__logo {
+      margin-top: 24px;
+      margin-right: 93px;
+      margin-bottom: 25px;
+      margin-left: 0;
+    }
+  }
+
+  .navigation {
+    border-bottom: 1px solid #ececec;
+  }
+
+  .navigation-list {
+    display: flex;
+    align-items: center;
+    &__item {
+      margin-right: 46px;
+      &--no-marginr {
+        margin-right: 0;
+      }
+    }
+    &__link {
+      position: relative;
+      letter-spacing: 0.02em;
+      line-height: 1.14;
+      text-decoration: none;
+      font-family: $mainFont;
+      font-weight: 500;
+      font-size: 14px;
+      color: $fontMainColor;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        color: $mainColor;
+      }
+      &--active {
+        color: $mainColor;
+      }
+      &--active::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: $mainColor;
+        border-radius: 2px;
+        top: 45px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.2;
+    color: $fontMainColor;
+    font-family: $secondaryFont;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+
+    &__first {
+      color: $mainColor;
+    }
+  }
+
+  .contact-link {
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+    text-decoration: none;
+    font-family: $mainFont;
+    font-weight: 500;
+    font-size: 14px;
+    color: $fontSecondaryColor;
+    display: flex;
+    align-items: center;
+    fill: $fontSecondaryColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $mainColor;
+      fill: $mainColor;
+    }
+
+    &--marginrl {
+      margin-left: auto;
+      margin-right: 50px;
+    }
+  }
+
+  .contact-link__item {
+    margin-right: 10px;
+  }
+
+  .hero__banner,
+  .about-us__tittle {
+    text-transform: uppercase;
+  }
+
+  .header {
+    color: $fontMainColor;
+
+    &__container {
+      display: flex;
+      align-items: center;
+    }
+
+    &__logo {
+      margin-top: 24px;
+      margin-right: 93px;
+      margin-bottom: 25px;
+      margin-left: 0;
+    }
+  }
+
+  .navigation {
+    border-bottom: 1px solid #ececec;
+  }
+
+  .navigation-list {
+    display: flex;
+    align-items: center;
+    &__item {
+      margin-right: 46px;
+      &--no-marginr {
+        margin-right: 0;
+      }
+    }
+    &__link {
+      position: relative;
+      letter-spacing: 0.02em;
+      line-height: 1.14;
+      text-decoration: none;
+      font-family: $mainFont;
+      font-weight: 500;
+      font-size: 14px;
+      color: $fontMainColor;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        color: $mainColor;
+      }
+      &--active {
+        color: $mainColor;
+      }
+      &--active::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: $mainColor;
+        border-radius: 2px;
+        top: 45px;
+      }
     }
   }
 }
