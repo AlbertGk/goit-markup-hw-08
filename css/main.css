@@ -1927,7 +1927,7 @@ img {
   .mobile-menu__content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
   .mobile-menu__list {
     display: flex;
