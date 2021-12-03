@@ -16,6 +16,7 @@
   .hamburger {
     display: inline-block;
     cursor: pointer;
+   
     &__bar1,
     &__bar2,
     &__bar3 {
@@ -24,23 +25,14 @@
       background-color: #212121;
       margin: 4px 0;
       transition: 0.4s;
+       &:hover{
+      background-color: $mainColor;
     }
-  }
-
-  .change .hamburger__bar1 {
-    -webkit-transform: rotate(-45deg) translate(-4px, 3px);
-    transform: rotate(-45deg) translate(-4px, 3px);
-    background-color: $mainColor;
-  }
-
-  .change .hamburger__bar2 {
-    opacity: 0;
-  }
-
-  .change .hamburger__bar3 {
-    -webkit-transform: rotate(45deg) translate(-6px, -6px);
-    transform: rotate(45deg) translate(-6px, -6px);
-    background-color: $mainColor;
+    }
+         &:hover{
+      color: $mainColor;
+      fill: $mainColor;
+    }
   }
 
   .contact-link {
@@ -65,11 +57,6 @@
     &--marginrl {
       margin-left: auto;
       margin-right: 50px;
-    }
-
-    &--hidden{
-    visibility: hidden;
-    display: none;
     }
   }
 
@@ -97,6 +84,12 @@
 
   .navigation {
     border-bottom: 1px solid #ececec;
+    &__contact--hidden{
+
+    visibility: hidden;
+    display: none;
+
+    }
   }
 
   .navigation-list {
@@ -132,16 +125,14 @@
     align-items: center;
     fill: $fontSecondaryColor;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &--tablet-email{
+      margin-bottom: 10px;
+    }
 
     &:hover,
     &:focus {
       color: $mainColor;
       fill: $mainColor;
-    }
-
-    &--marginrl {
-      margin-left: auto;
-      margin-right: 50px;
     }
   }
 
@@ -172,6 +163,13 @@
 
   .navigation {
     border-bottom: 1px solid #ececec;
+     &__contact{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-around;
+      margin-left: auto;
+    }
   }
 
   .navigation-list {
@@ -282,6 +280,12 @@
 
   .navigation {
     border-bottom: 1px solid #ececec;
+    &__contact{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-left: auto;
+    }
   }
 
   .navigation-list {

@@ -1,8 +1,3 @@
-function myFunction(x) {
-  x.classList.toggle("change");
-}
-
-
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[mobile-menu-open]'),

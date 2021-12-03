@@ -5,8 +5,8 @@
   &__banner {
     margin: 0 auto 30px;
     max-width: 211px;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
   }
 
   &__description {
@@ -37,6 +37,7 @@
   &__gallery {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
   }
 
@@ -46,12 +47,11 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    flex-basis: calc((100% - 90px) / 4);
+    &--marginb-mobile{
+      margin-bottom: 30px;
+    }
   }
 
-  &__box--margin-left {
-    margin-left: 30px;
-  }
 }
 .media-icons {
     display: flex;
@@ -94,8 +94,8 @@
   &__banner {
     margin: 0 auto 50px;
     max-width: 211px;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
   }
 
   &__description {
@@ -135,10 +135,13 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    flex-basis: calc((100% - 90px) / 4);
+    flex-basis: calc((100% - 30px) / 2);
+    &--marginb-tablet{
+      margin-bottom: 30px;
+    }
   }
 
-  &__box--margin-left {
+  &__box--marginl-tablet {
     margin-left: 30px;
   }
 }

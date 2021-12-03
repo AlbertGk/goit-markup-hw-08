@@ -24,14 +24,61 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
-  &__banner {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
+  &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }  
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item{
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+  }
+  &__link{
     color: $fontMainColor;
-    padding-bottom: 12px;
+  }
+  &__email{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $fontSecondaryColor;
+    margin-bottom: 64px;
+  }
+  &__phone{
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $mainColor;
+    margin-bottom: 32px;
+  }
+  &__media{
+    display: flex;
+  }
+  &__media-item{
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: $mainColor;
+    position: relative;
+    &--after-element::after{
+      position: absolute;
+      width: 220px;
+      height: 500px;
+      left: 10px;
+      top: 50px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      transform: rotate(90deg);
+    }
   }
 }
 
@@ -39,14 +86,19 @@
   position: absolute;
   width: 30px;
   height: 30px;
-  left: 400px;
-  top: 8px;
+  left: 436px;
+  top: 21px;
   background: $neutralColor;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: none;
   border-radius: 50%;
   box-sizing: border-box;
   &__vector {
     margin: 0 auto;
+    &:hover,
+    &:focus{
+      fill: $mainColor;
+      cursor: pointer;
+    }
   }
 }
 
@@ -57,4 +109,12 @@
   transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 750ms cubic-bezier(0.4, 0, 0.2, 1), visibility 750ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+
+
+
+
+
+
 }

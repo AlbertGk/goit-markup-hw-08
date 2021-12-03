@@ -207,8 +207,8 @@
 
   .modal {
     position: absolute;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -232,7 +232,7 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    left: 490px;
+    left: 412px;
     top: 8px;
     background: $neutralColor;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -319,7 +319,7 @@
     }
 
     &__policy-text {
-      font-size: 14px;
+      font-size: 12px;
       line-height: 1.71;
       letter-spacing: 0.03em;
       color: $fontSecondaryColor;
