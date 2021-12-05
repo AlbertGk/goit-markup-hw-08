@@ -1395,8 +1395,8 @@ img {
   }
   .modal {
     position: absolute;
-    width: 450px;
-    height: 609px;
+    width: 94vw;
+    height: 77vh;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -1914,8 +1914,8 @@ img {
   }
   .mobile-menu {
     position: absolute;
-    width: 480px;
-    height: 796px;
+    width: 100vw;
+    height: 100vh;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -1923,8 +1923,16 @@ img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
+    margin-bottom: auto;
   }
   .mobile-menu__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: auto;
+    max-width: 100vw;
+  }
+  .mobile-menu__contact {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -1950,6 +1958,7 @@ img {
     letter-spacing: 0.02em;
     color: #757575;
     margin-bottom: 64px;
+    display: inline-block;
   }
   .mobile-menu__phone {
     font-weight: 500;
@@ -1958,9 +1967,12 @@ img {
     letter-spacing: 0.02em;
     color: #2196f3;
     margin-bottom: 32px;
+    display: inline-block;
   }
   .mobile-menu__media {
     display: flex;
+    align-items: flex-end;
+    position: relative;
   }
   .mobile-menu__media-item {
     margin-right: 20px;
@@ -1969,14 +1981,34 @@ img {
     line-height: 22px;
     letter-spacing: 0.02em;
     color: #2196f3;
-    position: relative;
   }
-  .mobile-menu__media-item--after-element::after {
+  .mobile-menu__media-item--after-first::after {
+    content: "";
     position: absolute;
-    width: 220px;
-    height: 500px;
-    left: 10px;
-    top: 50px;
+    width: 22px;
+    height: 0px;
+    left: 85px;
+    top: 11px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
+  .mobile-menu__media-item--after-second::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 0px;
+    left: 164px;
+    top: 11px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
+  .mobile-menu__media-item--after-third::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 0px;
+    left: 265px;
+    top: 11px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
   }

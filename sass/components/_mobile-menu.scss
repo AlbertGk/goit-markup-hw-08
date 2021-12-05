@@ -14,8 +14,8 @@
 
 .mobile-menu {
   position: absolute;
-  width: 480px;
-  height: 796px;
+  width: 100vw;
+  height: 100vh;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -24,11 +24,19 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+  margin-bottom: auto;
   &__content{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin-bottom: auto;
+    max-width: 100vw;
   }  
+  &__contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
   &__list {
     display: flex;
     flex-direction: column;
@@ -50,6 +58,7 @@
     letter-spacing: 0.02em;
     color: $fontSecondaryColor;
     margin-bottom: 64px;
+    display: inline-block;
   }
   &__phone{
     font-weight: 500;
@@ -58,9 +67,12 @@
     letter-spacing: 0.02em;
     color: $mainColor;
     margin-bottom: 32px;
+    display: inline-block;
   }
   &__media{
     display: flex;
+    align-items: flex-end;
+    position: relative;
   }
   &__media-item{
     margin-right: 20px;
@@ -69,13 +81,33 @@
     line-height: 22px;
     letter-spacing: 0.02em;
     color: $mainColor;
-    position: relative;
-    &--after-element::after{
+    &--after-first::after{
+      content: "";
       position: absolute;
-      width: 220px;
-      height: 500px;
-      left: 10px;
-      top: 50px;
+      width: 22px;
+      height: 0px;
+      left: 85px;
+      top: 11px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      transform: rotate(90deg);
+    }
+     &--after-second::after{
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 0px;
+      left: 164px;
+      top: 11px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      transform: rotate(90deg);
+    }
+     &--after-third::after{
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 0px;
+      left: 265px;
+      top: 11px;
       border: 1px solid rgba(33, 33, 33, 0.2);
       transform: rotate(90deg);
     }
